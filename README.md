@@ -7,9 +7,9 @@ An end-to-end data project where I combined **Machine Learning + Tableau** to pr
 ## 🎯 Business Problem
 Logistics operations are experiencing high delay rates (~56.6%), leading to:
 
-Poor on-time delivery performance
-Increased operational costs
-Lack of visibility into high-risk shipments
+- Poor on-time delivery performance  
+- Increased operational costs  
+- Lack of visibility into high-risk shipments  
 
 Additionally, there is no system to predict delays in advance, making it difficult to take proactive action.
 
@@ -17,10 +17,38 @@ Additionally, there is no system to predict delays in advance, making it difficu
 
 ## 🚀 What I Built
 
-* Built a **Random Forest model** to predict logistics delays
-* Generated **Delay Probability (0–1)** for each shipment
-* Classified shipments into **High / Medium / Low Risk**
-* Designed an **interactive Tableau dashboard** with KPIs, filters, and insights
+✔ Built a Random Forest model to predict logistics delays  
+→ Generated delay probabilities with low error range (**-5% to +4%**)  
+
+✔ Generated Delay Probability (0–1) for each shipment  
+→ Average predicted delay: **~56.8%**, closely matching actual trends  
+
+✔ Classified shipments into High / Medium / Low Risk  
+→ Identified **502 high-risk shipments** out of 1,000  
+
+✔ Performed feature engineering and data preprocessing  
+→ Encoded traffic conditions and handled missing values for model readiness  
+
+✔ Compared Actual vs Predicted delays for validation  
+→ Model successfully captured delay patterns across assets  
+
+✔ Analyzed prediction error across assets  
+→ Detected under/over estimation in specific trucks (e.g., Truck_10, Truck_3)  
+
+✔ Identified peak delay windows using time-based analysis  
+→ Peak delay reached **69.44% around 5 PM**  
+
+✔ Performed root cause analysis (weather, traffic, mechanical)  
+→ Weather contributed **~26.7% of delays**, highest among all factors  
+
+✔ Derived operational insights (inventory vs delay, demand impact)  
+→ High inventory load led to **~60% delay rate**, while demand showed weak correlation  
+
+✔ Designed an interactive Tableau dashboard with KPIs, filters, and insights  
+→ Included Actual vs Predicted comparison, risk segmentation, and peak analysis  
+
+✔ Built an end-to-end pipeline from raw data to business insights  
+→ Data → ML → Prediction → Dashboard → Decision-making
 
 
 ---
@@ -214,7 +242,7 @@ Prediction Error Range:
 * Low Operational Load: **58.94% delay**
 * Balanced Load: **53.56% delay**
 
-👉 as per this dataset Higher load = higher delay probability
+👉 Higher operational load leads to increased delay probability
 
 ---
 
@@ -222,7 +250,8 @@ Prediction Error Range:
 
 * No strong correlation observed (R² ≈ 0)
 
-👉as per this dataset Demand does not directly drive delays
+👉 Demand does not directly drive delays
+
 ![Demand vs Delay ](demandvsdelay.png)
 ---
 
@@ -254,7 +283,7 @@ smart-logistics-analytics/
 ## 🔄 Workflow
 
 ```
-Raw Data → Data Cleaning → ML Model → Delay Probability → Risk Classification → Tableau Dashboard
+Raw Data → Data Cleaning → Feature Engineering → ML Model → Prediction → Risk Classification → Tableau Dashboard
 ```
 
 ---
