@@ -270,9 +270,7 @@ plt.show()
 
 ## 📸 Dashboard Preview
 
-![Smart Logistics Dashboard](dashboard/dashboard_screenshot.png)
-
-🔗 **Live Tableau Dashboard:** *(Add your Tableau Public link here)*
+![Smart Logistics Dashboard](Dashboard.png)
 
 ---
 
@@ -289,7 +287,7 @@ smart-logistics-analytics/
 ├── python/
 │   └── logistics_exploration.ipynb
 ├── dashboard/
-│   └── dashboard_screenshot.png
+│   └── Dashboard.png
 ├── images/
 │   └── charts/
 └── README.md
@@ -315,7 +313,7 @@ jupyter notebook python/logistics_exploration.ipynb
 ### Tableau
 - Open Tableau Public
 - Connect to `logistics_data.csv`
-- Or view live dashboard at link above
+- Or view dashboard in tableau file
 
 ---
 
