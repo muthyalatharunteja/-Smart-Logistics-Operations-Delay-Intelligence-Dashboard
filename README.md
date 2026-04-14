@@ -46,6 +46,7 @@ Logistics operations frequently experience delays due to multiple interacting fa
 - 📁 Total Records: **1,000 shipments**
 - 📌 Total Features: **16 columns**
 - 📅 Period: **January 2024 – December 2024**
+- - 🔗 Source: [Smart Logistics Supply Chain Dataset — Kaggle](https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset)
 
 ### Key Fields
 
