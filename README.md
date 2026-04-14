@@ -223,7 +223,7 @@ Prediction Error Range:
 * No strong correlation observed (R² ≈ 0)
 
 👉as per this dataset Demand does not directly drive delays
-
+![Demand vs Delay ](demandvsdelay.png)
 ---
 
 ## Project Structure
