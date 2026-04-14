@@ -22,8 +22,6 @@ Additionally, there is no system to predict delays in advance, making it difficu
 * Classified shipments into **High / Medium / Low Risk**
 * Designed an **interactive Tableau dashboard** with KPIs, filters, and insights
 
----
-
 
 ---
 
@@ -39,9 +37,45 @@ Additionally, there is no system to predict delays in advance, making it difficu
 
 ---
 
+## 📊 Dataset
+
+- 📁 Total Records: **1,000 shipments**
+- 📌 Total Features: **16 columns**
+- 📅 Period: **January 2024 – December 2024**
+- 🔗 Source: [Smart Logistics Supply Chain Dataset — Kaggle](https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset)
+
+---
+
+### Key Fields
+
+| Column | Description |
+|---|---|
+| Timestamp | Full datetime of shipment |
+| Asset_ID | Truck identifier (Truck_1 to Truck_10) |
+| Traffic_Status | Clear / Detour / Heavy |
+| Logistics_Delay | 1 = Delayed, 0 = On Time |
+| Logistics_Delay_Reason | Weather / Traffic / Mechanical / None |
+| Inventory_Level | Stock level at time of shipment |
+| Asset_Utilization | % utilization of truck |
+| Demand_Forecast | Predicted demand units |
+| Waiting_Time | Delay duration in minutes |
+| Temperature | Temperature at time of shipment |
+| Humidity | Humidity at time of shipment |
+
+--- 
+
+## 🚀 How to Run
+
+### MySQL
+```bash
+# 1. Import dataset into MySQL Workbench
+# 2. Run smart_logistics.sql
+```
 ---
 
 ## 🤖 Machine Learning Pipeline
+
+---
 
 ### Data Processing
 
@@ -94,6 +128,12 @@ df_original.to_csv("logistics_with_predictions.csv", index=False)
 
 ---
 
+### Tableau
+- Open Tableau Public
+- load dataset logistics_with_predictions.csv
+- To view dashboard ![tableau file](Smart_Logistics_Dashboard.twb)
+
+---
 ## 📊 Dashboard Overview
 
 ### 🔢 Key KPIs
@@ -207,7 +247,7 @@ smart-logistics-analytics/
 └── README.md
 ```
 
----
+
 
 ---
 
@@ -230,8 +270,7 @@ Raw Data → Data Cleaning → ML Model → Delay Probability → Risk Classific
 ---
 
 ## 📸 Dashboard
-
-(Add Tableau Public link here)
+![Smart Logistics Dashboard](Dashboard.png)
 
 ---
 
@@ -245,6 +284,7 @@ Aspiring Data Analyst focused on:
 
 ---
 
-## ⭐ If you found this useful
+## ⭐ If you like this project or found it insightful, please give it a ⭐ on GitHub — it really helps!
+🔗 LinkedIn: *(https://linkedin.com/in/muthyalatharunteja)*
+💻 GitHub: *(https://github.com/muthyalatharunteja)*
 
-Give it a ⭐ on GitHub!
